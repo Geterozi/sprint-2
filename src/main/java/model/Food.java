@@ -2,7 +2,7 @@ package model;
 
 import model.constants.Discount;
 
-public abstract class  Food implements Discountable {
+public abstract class Food implements Discountable {
     protected int amount;
     protected double price;
     protected boolean isVegetarian;
@@ -34,7 +34,8 @@ public abstract class  Food implements Discountable {
     public double totalPrice() {
         return amount * price;
     }
-    public  double discountPrice () {
+
+    public double discountPrice() {
         double discount = (100 - getDiscount()) / 100;
         return totalPrice() * discount;
     }
