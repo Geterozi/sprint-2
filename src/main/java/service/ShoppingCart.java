@@ -13,7 +13,7 @@ public class ShoppingCart {
         double sum = 0;
         for (Food item : items) {
             sum += item.totalPrice();
-            
+
         }
         return sum;
     }
